@@ -29,6 +29,7 @@
  .nav-items a:hover {
      background-color: #E84142;
      color: black;
+     padding: 5px;
  }
 
  .logo img {
@@ -39,7 +40,7 @@
  .nav-items img {
      float: right;
      height: auto;
-     width: 30px;
+     width: 50px;   
  }
 
  .nav-items {
@@ -105,6 +106,7 @@
      justify-content: space-around;
      align-items: center;
      position: relative;
+     margin: 40px;
  }
 
  .image-container-sec1 {
@@ -165,12 +167,6 @@
      column-gap: 20px;
  }
 
- /* .container{
-    max-width:1200px;
-  margin: 0 auto;
-  padding: 0 30px;
- } */
-
  #section2 h2 {
      color: #E84142;
      margin-bottom: 20px;
@@ -207,7 +203,6 @@
 
  .col-menu-sec2 ul {
      list-style: none;
-     padding: 0px;
  }
 
  .col-menu-sec2 li {
@@ -218,10 +213,6 @@
      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
      cursor: pointer;
      transition: background-color 0.3s;
- }
-
- .col-menu-sec2 li {
-     padding: 10px;
  }
 
  .col-menu-sec2 li:hover {
@@ -245,22 +236,20 @@
      overflow: hidden;
      height: 400px;
      position: relative;
-     margin: 50px;
+     margin: 30px;
      padding: 30px 10px 20px 30px;
  }
 
  .sec-article-content-container {
-     padding: 30px 30px;
-     width: 70%;
-     margin: 40px;
+     padding: 30px 10px 20px 30px;
+     margin: 50px;
+     width:70%;
  }
-
  /* ----section-3 ----- */
  #section3 {
      height: 650px;
      padding: 0 150px;
      text-align: center;
-
  }
 
  #section3 h2 {
@@ -325,7 +314,7 @@
 
  /* ----section-4 ----- */
  #section4 {
-     height: 800px;
+     height: 100vh;
      padding: 0 50px;
      display: flex;
      flex-direction: column;
