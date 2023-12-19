@@ -17,6 +17,9 @@
  }
 
  /* ---- Nav-bar----- */
+
+
+
  .nav-bar .container {
      display: flex;
      background-color: #000000;
@@ -40,7 +43,7 @@
  .nav-items img {
      float: right;
      height: auto;
-     width: 50px;   
+     width: 50px;
  }
 
  .nav-items {
@@ -101,7 +104,7 @@
  /* ----section-1 ----- */
  #section1 {
      display: flex;
-     height: 650px;
+     height: 100vh;
      flex-direction: row;
      justify-content: space-around;
      align-items: center;
@@ -201,9 +204,7 @@
      position: relative;
  }
 
- .col-menu-sec2 ul {
-     list-style: none;
- }
+
 
  .col-menu-sec2 li {
      padding: 8px;
@@ -220,6 +221,8 @@
  }
 
  .col-menu-sec2 a {
+     display: block;
+     /* Entire button action including space */
      text-decoration: none;
      color: #F6F6F6;
      font-size: 1rem;
@@ -234,20 +237,47 @@
      display: flex;
      flex-direction: column;
      overflow: hidden;
-     height: 400px;
+     height: 500px;
+     width: 55%;
      position: relative;
-     margin: 30px;
-     padding: 30px 10px 20px 30px;
+     margin: 2px 60px;
+     padding: 30px 20px;
+     scroll-behavior: smooth;
+     overflow-y: scroll;
  }
+
+ .sec-article-container::-webkit-scrollbar {
+     width: 10px;
+ }
+
+ /* Track */
+ .sec-article-container::-webkit-scrollbar-track {
+     box-shadow: inset 0 0 5px grey;
+     border-radius: 10px;
+ }
+
+ /* Handle */
+ .sec-article-container::-webkit-scrollbar-thumb {
+     background: rgb(242, 234, 234);
+     border-radius: 5px;
+ }
+
+ /* Handle on hover */
+ .sec-article-container::-webkit-scrollbar-thumb:hover {
+     background: #b30000;
+ }
+
 
  .sec-article-content-container {
      padding: 30px 10px 20px 30px;
-     margin: 50px;
-     width:70%;
+     width: 70%;
+     margin: 2px;
+     position: relative;
  }
+
  /* ----section-3 ----- */
  #section3 {
-     height: 650px;
+     height: 100vh;
      padding: 0 150px;
      text-align: center;
  }
@@ -314,18 +344,18 @@
 
  /* ----section-4 ----- */
  #section4 {
-     height: 100vh;
+     height: 650px;
      padding: 0 50px;
      display: flex;
      flex-direction: column;
+     background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(111, 34, 50) 77.5%);
  }
 
  #section4 h2 {
      color: #E84142;
-     margin: 20px;
      font-family: 'Goldman', sans-serif;
+     margin-bottom: 20px;
  }
-
 
  .video-container {
      height: 500px;
