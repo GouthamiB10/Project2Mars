@@ -17,10 +17,19 @@
  }
 
  /* ---- Nav-bar----- */
+ .nav-bar {
+     position: sticky;
+ }
+
  .container {
      display: flex;
      background-color: #000000;
      padding: 0 50px;
+ }
+
+ .nav-items a:hover {
+     background-color: #E84142;
+     color: black;
  }
 
  .nav-bar .container {
@@ -158,44 +167,70 @@
      display: flex;
      height: 650px;
      flex-direction: row;
-     background-image: url(./Images/2-section.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     opacity: 0.2;
+     position: relative;
+
+ }
+
+ /* .container{
+    max-width:1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+ } */
+
+ #section2 h2 {
+     color: #E84142;
+     margin-bottom: 20px;
+     font-family: 'Goldman', sans-serif;
      position: relative;
  }
 
- #section2::after {
-    
+ #section2::before {
+     content: "";
+     background-image: url(./Images/Mars_Express_pillars.jpg);
+     background-size: cover;
+     opacity: 0.4;
+     position: absolute;
+     top: 0px;
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
  }
 
  .menu-container {
      display: flex;
      display: inline-block;
      width: 50%;
-
+     position: relative;
  }
 
  .col-menu-sec2 {
      width: 400px;
      color: #fff;
      padding: 50px;
+     position: relative;
  }
 
  .col-menu-sec2 ul {
      list-style: none;
-     padding: 0;
-     margin: 0;
+     padding: 0px;
  }
 
  .col-menu-sec2 li {
-     padding: 10px;
+     padding: 8px;
+     margin-bottom: 5px;
+     background-color: #480c0c;
+     color: #ffffff;
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
      cursor: pointer;
      transition: background-color 0.3s;
  }
 
+ .col-menu-sec2 li {
+     padding: 10px;
+ }
+
  .col-menu-sec2 li:hover {
-     background-color: #555;
+     background-color: #780a0a;
  }
 
  .col-menu-sec2 a {
@@ -214,11 +249,12 @@
      flex-direction: column;
      overflow: hidden;
      height: 400px;
+     position: relative;
  }
 
  .sec-article-content-container {
      padding: 30px;
-     width: 50%;
+     width: 70%;
  }
 
  /* ----section-3 ----- */
