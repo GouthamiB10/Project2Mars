@@ -17,16 +17,19 @@
  }
 
  /* ---- Nav-bar----- */
-
-
+ /* .nav-bar {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 99;
+ } */
 
  .nav-bar .container {
      display: flex;
      background-color: #000000;
-     padding: 0 50px;
+     padding: 0 3em;
      justify-content: space-between;
-     /* position: sticky;
-     top:0; */
  }
 
  .nav-items a:hover {
@@ -51,7 +54,7 @@
      justify-content: center;
      align-items: center;
      gap: 20px;
-     padding: 0px 120px;
+     padding: 0px 7.5em;
  }
 
  .nav-items a {
@@ -78,7 +81,7 @@
  .header-section {
      display: flex;
      height: 400px;
-     padding: 80px 400px;
+     padding: 5em 25em;
      justify-content: center;
      align-items: center;
      background-image: url(./Images/Header.jpg);
@@ -113,10 +116,10 @@
  }
 
  .image-container-sec1 {
-     width: 300px;
+     width: 450px;
      height: 400px;
      gap: 10px;
-     margin-left: 100px;
+     margin-left: 6em;
  }
 
  .sec1-img img {
@@ -138,7 +141,7 @@
      display: flex;
      width: 250px;
      height: 250px;
-     padding: 10px 300px;
+     padding: 10px 18em;
      flex-direction: column;
      justify-content: center;
      align-items: center;
@@ -181,7 +184,7 @@
      content: "";
      background-image: url(./Images/Mars_Express_pillars.jpg);
      background-size: cover;
-     opacity: 0.4;
+     opacity: 0.3;
      position: absolute;
      top: 0px;
      bottom: 0px;
@@ -204,8 +207,6 @@
      position: relative;
  }
 
-
-
  .col-menu-sec2 li {
      padding: 8px;
      margin-bottom: 5px;
@@ -220,9 +221,9 @@
      background-color: #780a0a;
  }
 
+ /* Entire button action including space */
  .col-menu-sec2 a {
      display: block;
-     /* Entire button action including space */
      text-decoration: none;
      color: #F6F6F6;
      font-size: 1rem;
@@ -264,9 +265,8 @@
 
  /* Handle on hover */
  .sec-article-container::-webkit-scrollbar-thumb:hover {
-     background: #b30000;
+     background: #780a0a;
  }
-
 
  .sec-article-content-container {
      padding: 30px 10px 20px 30px;
@@ -278,7 +278,7 @@
  /* ----section-3 ----- */
  #section3 {
      height: 100vh;
-     padding: 0 150px;
+     padding: 0 9em;
      text-align: center;
  }
 
@@ -321,7 +321,7 @@
  .img-title p {
      text-align: start;
      font-weight: bolder;
-     font-size: 18px;
+     font-size: 1rem;
  }
 
  .img-absolute-hover {
@@ -345,7 +345,7 @@
  /* ----section-4 ----- */
  #section4 {
      height: 650px;
-     padding: 0 50px;
+     padding: 0em 3em;
      display: flex;
      flex-direction: column;
      background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(111, 34, 50) 77.5%);
@@ -359,7 +359,7 @@
 
  .video-container {
      height: 500px;
-     padding: 20px 330px;
+     padding: 1em 20.6em;
      justify-content: center;
      text-align: center;
  }
@@ -369,7 +369,7 @@
      display: inline-flex;
      height: 300px;
      width: auto;
-     padding: 0px 40px;
+     padding: 0px 2em;
      flex-direction: row;
      gap: 50px;
  }
@@ -383,7 +383,7 @@
  .footer-container {
      display: inline-flex;
      height: 300px;
-     padding: 20px 690px;
+     padding: 1em 43.2em;
      flex-direction: column;
      justify-content: center;
      align-items: center;
@@ -405,10 +405,12 @@
      margin-top: 10px;
  }
 
- .stamp {
-     margin-top: 20px;
- }
-
  .footer-container p {
      font-weight: 800;
+ }
+
+ .footer-items a {
+     text-decoration: none;
+     color: #E84142;
+     font-weight: 600;
  }
