@@ -1,15 +1,13 @@
 /* ---- Fonts ----- */
 /*
-font-family: "Fjalla One", sans-serif;
-font-family: "Italiana", sans-serif;
-font-family: "Nunito", sans-serif;
+font-family: 'Ruluko', sans-serif;;
+font-family: 'Goldman', sans-serif;
+font-family: 'Jura', sans-serif;;
 */
 
 /* ---- Colors ----- */
 /*
-accent-color: #47150A;
-light-colors: #E0DFDA, #D2CBAF;
-dark-colors: #868174, #A18C74;
+dark-colors: #E84142, #780a0a,  #480c0c;
 */
 * {
     box-sizing: border-box;
